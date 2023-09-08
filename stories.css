@@ -1,0 +1,76 @@
+/* Lists of stories */
+
+.stories-list {
+  margin: 20px 5px;
+}
+
+.stories-list > li {
+  color: gray;
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+#stories-loading-msg {
+  font-weight: bold;
+  font-size: 150%;
+  margin: 20px 30px;
+}
+
+
+/* Individual stories */
+/* Add this to your existing CSS */
+.star {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1;
+  border-style: solid;
+  left: 15px;
+  border-width: 0 15px 26px 15px;
+  border-color: transparent transparent #FFA500 transparent; /* Adjust the filled color */
+}
+
+.heart { 
+  position: relative; 
+  width: 100px; 
+  height: 90px; 
+} 
+
+.heart:before, .heart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: red; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%; 
+} 
+
+.heart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%; 
+}
+
+
+.story-link {
+  color: black;
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin: 18px 0;
+}
+
+.story-link:hover {
+  text-decoration: none;
+}
+
+.story-author {
+  margin-left: 2em;
+}
+
+.story-user {
+  display: block;
+}
